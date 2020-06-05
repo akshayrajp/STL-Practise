@@ -1,0 +1,58 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    //initialising a vector
+    vector<int> v;
+    //assigning value to vector
+    for(int i=0;i<5;i++){
+        v.push_back(i);
+    }
+    vector<int>::iterator i;
+    for(i=v.begin();i!=v.end();i++){
+        cout<<* i<<" ";
+    }
+    cout<<endl;
+    vector<int>::iterator j;
+        for(auto j=v.rbegin();j!=v.rend();j++){
+        cout<<* j<<" ";
+    }
+        cout<<endl;
+    cout<<v.size();
+        cout<<endl;
+    cout<<v.max_size();
+    cout<<endl;
+    
+    //inserting at the beginning
+    v.insert(v.begin(),2);
+    for(i=v.begin();i!=v.end();i++){
+        cout<<* i<<" ";
+    }
+    cout<<endl;
+    v.resize(5);
+    v.shrink_to_fit();
+    for(i=v.begin();i!=v.end();i++){
+        cout<<* i<<" ";
+    }
+    cout<<endl;
+    v.pop_back();
+    for(i=v.begin();i!=v.end();i++){
+        cout<<* i<<" ";
+    }
+    cout<<endl;
+    vector<int> u;
+    u.push_back(0);
+    v.swap(u);
+    cout<<"v:";
+        for(i=v.begin();i!=v.end();i++){
+        cout<<* i<<" ";
+    }
+    cout<<endl;
+    cout<<"u:";
+        for(i=u.begin();i!=u.end();i++){
+        cout<<* i<<" ";
+    }
+    
+        return 0;
+}
