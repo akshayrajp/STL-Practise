@@ -1,0 +1,46 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    //initalisation of array
+    array<int,10> arr={0,1};
+    //inserting into array
+    for(int i=2;i<10;i++){
+        arr[i]=i;
+    }
+    //using size operator printing an array using [] operator
+    cout<<"Arr:";
+    for(int i=0;i<arr.size();i++)
+    cout<<arr[i];
+    cout<<endl;
+    //using front() back() at() functions
+    cout<<"front element:"<<arr.front()<<endl;
+    cout<<"back element:"<<arr.back()<<endl;
+    cout<<"element at 5:  "<<arr.at(5)<<endl;
+    //copying an arrray to other
+    array<int,10>brr=arr;
+    cout<<"Brr:";
+    for(int i=0;i<brr.size();i++)
+    cout<<brr[i];
+    cout<<endl;
+    // using fill function 
+    brr.fill(9);
+    //using swap function
+    arr.swap(brr);
+        cout<<"Arr:";
+    for(int i=0;i<arr.size();i++){
+        cout<<arr[i];
+    }
+    cout<<endl;
+        cout<<"Brr:";
+
+        for(int i=0;i<brr.size();i++){
+        cout<<brr[i];
+    }
+    cout<<endl;
+    
+    
+    return 0;
+}
