@@ -21,7 +21,7 @@ int main()
     q.push(1); 
     q.push(3); 
     q.push(5); 
-  	q.push(7);
+	q.push(7);
     
 	cout << "The queue  is : "; 
     showq(q); 
