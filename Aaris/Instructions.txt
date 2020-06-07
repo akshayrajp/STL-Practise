@@ -3,7 +3,7 @@ https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
 You will be implementing the containers and the associated functions with that container. Two containers every day.
 
 03/06/2020 - Arrays and Vectors
-04/06/2020   List and Forward List
+04/06/2020 - List and Forward List
 05/06/2020 - Queue and Deque
 06/06/2020 - Priority Queue and Stack
 07/06/2020 - Set and Multiset
