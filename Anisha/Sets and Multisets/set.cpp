@@ -16,7 +16,7 @@ int main()
     set<int,greater<int>>::iterator it;
     set<int>::value_compare comp = set1.value_comp(); 
     cout<<"Elements of the set1 are:\n"; 
-    for(it=set1.begin();it!= set1.end();++it) 
+    for(it=set1.begin();it!=set1.end();++it) 
     { 
         cout<<*it<<" "; 
     } 
